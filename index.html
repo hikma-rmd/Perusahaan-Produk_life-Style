@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Navbar Search</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <header class="header">
+<nav class="navbar navbar-expand bg-white fixed-top border-bottom shadow-sm px-5">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" height="60" alt="Logo">
+    </a>
+
+    <!-- Menu -->
+    <ul class="navbar-nav mx-auto d-flex flex-row gap-4">
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#men">Men</a></li>
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#ladies">Ladies</a></li>
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#kids">Kids</a></li>
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#footwear">Footwear</a></li>
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#collab">Collab</a></li>
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#store">Store</a></li>
+      <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#blog">Blog</a></li>
+    </ul>
+
+    <!-- Bagian kanan -->
+        <div class="d-flex align-items-center gap-4"> <!-- Ubah gap dari 3 → 4 -->
+          <form class="d-flex align-items-center border-bottom border-dark">
+            <input class="form-control border-0 bg-transparent p-0" type="search" placeholder="Search" style="width:140px;">
+            <button class="btn btn-link text-dark p-0"><i class="fas fa-search"></i></button>
+          </form>
+
+          <!-- Tambahkan pe-2 agar lebih lega -->
+          <a href="#" class="text-dark fs-5 pe-2"><i class="fas fa-shopping-bag"></i></a>
+          <a href="login.html" class="text-dark fs-5"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  
+  <section class="home" id="home">
+    <div class="content">
+        <h3>Own the Streets.</h3>
+        <p>Style that moves with you — bold, effortless, and unapologetically real.</p>
+        <a href="#" class="btn btn-danger btn-shop">Shop the Collection</a>
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="img/street.jpeg" alt="About us photo">
+    </div>
+    <div class="about-content">
+      <h2>About</h2>
+      <h3>Who We Are</h3>
+      <p>
+        We believe fashion is more than clothing — it’s a lifestyle. 
+        Our mission is to bring authentic, effortless, and timeless pieces 
+        for individuals who move with confidence. 
+        Every collection we create tells a story of culture, creativity, and character.
+      </p>
+      <a href="#" class="btn btn-danger btn-shop">Check Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED SECTION -->
+<section class="featured" id="featured">
+  <h2>Featured</h2>
+
+  <div class="featured-banner">
+    <img src="img/featured-main.jpeg" alt="Featured Banner">
+  </div>
+
+  <div class="featured-grid">
+    <div class="featured-card">
+      <img src="img/featured1.jpeg" alt="Promo 1">
+      <h4>Blue Edition</h4>
+      <p>Up to 70% Off</p>
+    </div>
+    <div class="featured-card">
+      <img src="img/featured2.jpeg" alt="Promo 2">
+      <h4>Streetwear Sale</h4>
+      <p>Buy 1 Get 1 + 10%</p>
+    </div>
+    <div class="featured-card">
+      <img src="img/featured3.jpeg" alt="Promo 3">
+      <h4>Greenlight Collection</h4>
+      <p>New Look, Same Energy</p>
+    </div>
+  </div>
+</section>
+
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">New Arrivals</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item1.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Classic Slides">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Classic Slides</h5>
+              <p class="text-danger fw-semibold fs-6">Rp129.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item2.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Olive Hoodie">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Olive Hoodie</h5>
+              <p class="text-danger fw-semibold fs-6">Rp249.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item3.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Striped Jacket">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Striped Jacket</h5>
+              <p class="text-danger fw-semibold fs-6">Rp319.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item4.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Urban Cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Urban Cap</h5>
+              <p class="text-danger fw-semibold fs-6">Rp129.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item5.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Urban Cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Urban Cap</h5>
+              <p class="text-danger fw-semibold fs-6">Rp129.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item6.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Urban Cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Urban Cap</h5>
+              <p class="text-danger fw-semibold fs-6">Rp129.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item9.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Urban Cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Urban Cap</h5>
+              <p class="text-danger fw-semibold fs-6">Rp129.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <div class="ratio ratio-1x1">
+              <img src="img/item8.jpeg" class="card-img-top rounded-3 object-fit-cover" alt="Urban Cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mb-2">Urban Cap</h5>
+              <p class="text-danger fw-semibold fs-6">Rp129.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>info kontak</h3>
+                <a href="#"><i class="fas fa-phone"></i> +62822-4829-3231</a>
+                <a href="#"><i class="fas fa-envelope"></i> clothes@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Tamaruang, Gowa</a>
+            </div>
+        </div>
+        <div class="credit">© 2024 <span>clothes</span> | Dibuat dengan ❤️ oleh Tim clothes</div>
+    </section>
+</body>
+</html>

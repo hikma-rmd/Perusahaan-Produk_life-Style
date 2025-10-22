@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar | MyClothes</title>
+  <link rel="stylesheet" href="css/style-log.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div class="container-fluid p-0 d-flex min-vh-100">
+    <!-- Bagian kiri -->
+    <div class="image-section col-md-6 d-none d-md-block position-relative">
+      <img src="img/log.jpeg" alt="Fashion Collection" class="fashion-img">
+      <img src="img/logo.png" alt="Logo Brand" class="logo">
+    </div>
+
+    <!-- Bagian kanan -->
+    <div class="form-section col-md-6 d-flex align-items-center justify-content-center bg-white">
+      <div class="form-box w-75" style="max-width: 400px;">
+        <h2 class="fw-bold mb-1 text-dark">Selamat Datang!</h2>
+        <p class="text-secondary mb-4">Yuk, daftar untuk mulai belanja.</p>
+
+        <form action="#" method="post">
+          <label>Nama Lengkap</label>
+          <div class="input-box">
+            <input type="text" placeholder="Masukkan nama lengkap anda" required>
+          </div>
+
+          <label>Email</label>
+          <div class="input-box">
+            <input type="email" placeholder="Masukkan email anda" required>
+          </div>
+
+          <label>No. Telepon</label>
+          <div class="input-box">
+            <input type="tel" placeholder="Masukkan nomor telepon anda" required>
+          </div>
+
+          <label>Password</label>
+          <div class="input-box">
+            <input type="password" placeholder="Masukkan password" required>
+          </div>
+
+          <label>Konfirmasi Password</label>
+          <div class="input-box">
+            <input type="password" placeholder="Masukkan konfirmasi password" required>
+          </div>
+
+          <button type="submit" class="btn btn-danger w-100 py-2" onclick="location.href='riwayat.html'">Daftar</button>
+
+          <div class="divider text-center my-3 text-secondary">ATAU</div>
+
+          <button type="button" class="btn btn-outline-secondary w-100 py-2">Daftar dengan Google</button>
+
+          <p class="register text-center mt-3">Sudah punya akun? <a href="login.html" class="text-danger text-decoration-none">Masuk</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

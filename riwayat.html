@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwayat Pesanan | Clothes</title>
+  <link rel="stylesheet" href="css/style-his.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <header class="d-flex justify-content-between align-items-center shadow-sm p-3 bg-white">
+    <div class="logo d-flex align-items-center gap-2">
+      <img src="img/logo.png" alt="Logo" height="100">
+    </div>
+    <nav>
+      <a href="#" class="text-dark text-decoration-none fw-medium">Men</a>
+      <a href="#" class="text-dark text-decoration-none fw-medium">Ladies</a>
+      <a href="#" class="text-dark text-decoration-none fw-medium">Kids</a>
+      <a href="#" class="text-dark text-decoration-none fw-medium">Store</a>
+      <a href="#" class="text-dark text-decoration-none fw-medium">Hot Deals</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile text-center mb-4">
+        <img src="img/profile.jpeg" alt="User" class="rounded-circle mb-2" width="70" height="70">
+        <h3 class="fs-6 mb-1">Hikma Ramadhani</h3>
+        <p class="text-muted small">hikmarmdhni10@gmail.com</p>
+      </div>
+
+      <div class="menu">
+        <a href="#" class="list-group-item list-group-item-action">Poin (0)</a>
+        <a href="#" class="list-group-item list-group-item-action active text-bg-light border-danger text-danger fw-semibold">Daftar Transaksi</a>
+        <a href="#" class="list-group-item list-group-item-action">Daftar Invoice</a>
+        <a href="#" class="list-group-item list-group-item-action">Voucher</a>
+        <a href="#" class="list-group-item list-group-item-action">Notifikasi</a>
+        <a href="#" class="list-group-item list-group-item-action">Wishlist</a>
+        <a href="#" class="list-group-item list-group-item-action">Pengaturan</a>
+        <a href="login.html" class="list-group-item list-group-item-action text-danger fw-semibold">Keluar</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <h2>Riwayat Pesanan</h2>
+
+      <div class="filters">
+        <input type="text" placeholder="Cari transaksi...">
+        <select>
+          <option>Semua Tanggal</option>
+        </select>
+      </div>
+
+      <div class="status-filter">
+        <button class="btn btn-outline-danger btn-sm active">Semua Status</button>
+        <button class="btn btn-outline-danger btn-sm">Lunas</button>
+        <button class="btn btn-outline-danger btn-sm">Diproses</button>
+        <button class="btn btn-outline-danger btn-sm">Dikirim</button>
+        <button class="btn btn-outline-danger btn-sm">Diterima</button>
+        <button class="btn btn-outline-danger btn-sm">Kadaluarsa</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No. Pesanan</th>
+            <th>Tanggal</th>
+            <th>Produk</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#INV-2301</td>
+            <td>20 Okt 2025</td>
+            <td>
+              <div class="product-cell">
+                <img src="img/item4.jpeg" alt="Kaos 3Second">
+                <div class="product-info">
+                  <strong>Kaos 3Second x Karafuru</strong>
+                  <span>Ukuran: M</span>
+                </div>
+              </div>
+            </td>
+            <td>Rp120.000</td>
+            <td class="text-danger fw-medium">Dikirim</td>
+            <td><a href="#" class="btn btn-danger btn-sm">Detail</a></td>
+          </tr>
+          <tr>
+            <td>#INV-2298</td>
+            <td>18 Okt 2025</td>
+            <td>
+              <div class="product-cell">
+                <img src="img/item10.jpeg" alt="Hoodie 3Second">
+                <div class="product-info">
+                  <strong>Hoodie 3Second</strong>
+                  <span>Ukuran: L</span>
+                </div>
+              </div>
+            </td>
+            <td>Rp250.000</td>
+            <td class="text-danger fw-medium">Diterima</td>
+            <td><a href="#" class="btn btn-danger btn-sm">Detail</a></td>
+          </tr>
+          <tr>
+            <td>#INV-2287</td>
+            <td>10 Okt 2025</td>
+            <td>
+              <div class="product-cell">
+                <img src="img/item7.jpeg" alt="Tas Selempang">
+                <div class="product-info">
+                  <strong>Tas Selempang 3Second</strong>
+                  <span>Warna: Hitam</span>
+                </div>
+              </div>
+            </td>
+            <td>Rp90.000</td>
+            <td class="text-danger fw-medium">Lunas</td>
+            <td><a href="#" class="btn btn-danger btn-sm">Detail</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
+ 

@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  padding: 0 40px;
+  height: 70px; /* tetap */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  overflow: hidden; /* cegah isi memperbesar tinggi */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #e31e26;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: #fff;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+.profile img {
+  object-fit: cover;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #e31e26;
+}
+
+.menu a.active {
+  color: #e31e26;
+  font-weight: 600;
+}
+
+.menu a.logout {
+  color: #e31e26;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  padding: 25px 30px;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.filters input[type="text"] {
+  flex: 1;
+}
+
+.status-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.status-btn.active {
+  background: #ffe6e6;
+}
+
+.status-btn:hover {
+  background: #e31e26;
+  color: #fff;
+}
+
+/* ===== TABEL TRANSAKSI ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+thead {
+  background: #f9f9f9;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: 600;
+  color: #444;
+}
+
+td.status {
+  font-weight: 500;
+  color: #e31e26;
+}
+
+tr:hover {
+  background: #fff5f5;
+  transition: 0.2s;
+}
+
+.btn-detail:hover {
+  background: #c91a21;
+}
+
+/* ===== PRODUK DENGAN GAMBAR ===== */
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-cell img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info span {
+  font-size: 13px;
+  color: #666;
+}

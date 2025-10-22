@@ -1,0 +1,411 @@
+/* ===== RESET DAN GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BAGIAN KIRI: GAMBAR ===== */
+.image-section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.fashion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 120px;
+  height: auto;
+  z-index: 2;
+  opacity: 0.95;
+}
+
+.form-box {
+  width: 80%;
+  max-width: 400px;
+}
+
+/* ===== TEKS UTAMA ===== */
+.form-box h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-box p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ===== LABEL DAN INPUT ===== */
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-box input:focus {
+  border-color: #e63946;
+}
+
+/* ===== OPSI LOGIN ===== */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.options label {
+  font-size: 14px;
+}
+
+.options a {
+  color: #e63946;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ===== TOMBOL UTAMA (LOGIN / DAFTAR) ===== */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #d62828;
+}
+
+/* ===== PEMISAH (ATAU) ===== */
+.divider {
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* ===== TOMBOL GOOGLE ===== */
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-google:hover {
+  background-color: #f3f3f3;
+}
+
+/* ===== LINK DAFTAR / LOGIN ===== */
+.register {
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+}
+
+.register a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+/* ===== VARIASI HALAMAN SIGNUP ===== */
+body.signup .form-box h2 {
+  color: #e63946;
+}
+
+body.signup .btn-login {
+  background-color: #e63946;
+}
+
+body.signup .btn-login:hover {
+  background-color: #d62828;
+}
+
+/* ===== RIWAYAT ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  padding: 15px 40px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 30px;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #e31e26;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: #fff;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.profile p {
+  font-size: 13px;
+  color: #666;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #e31e26;
+}
+
+.menu a.active {
+  color: #e31e26;
+  font-weight: 600;
+}
+
+.menu a.logout {
+  color: #e31e26;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  padding: 25px 30px;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.filters input[type="text"] {
+  flex: 1;
+}
+
+.status-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.status-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e31e26;
+  background: #fff;
+  color: #e31e26;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.status-btn.active {
+  background: #ffe6e6;
+}
+
+.status-btn:hover {
+  background: #e31e26;
+  color: #fff;
+}
+
+/* ===== TABEL TRANSAKSI ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+thead {
+  background: #f9f9f9;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: 600;
+  color: #444;
+}
+
+td.status {
+  font-weight: 500;
+  color: #e31e26;
+}
+
+tr:hover {
+  background: #fff5f5;
+  transition: 0.2s;
+}
+
+.btn-detail {
+  padding: 6px 12px;
+  background: #e31e26;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-detail:hover {
+  background: #c91a21;
+}
+
+/* ===== PRODUK DENGAN GAMBAR ===== */
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-cell img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info span {
+  font-size: 13px;
+  color: #666;
+}
